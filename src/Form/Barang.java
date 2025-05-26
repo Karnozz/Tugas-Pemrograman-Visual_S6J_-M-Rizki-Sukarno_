@@ -32,7 +32,7 @@ private DefaultTableModel tabmode;
     } 
     protected void kosong() { 
         txtkd.setText(""); 
-        txtnm.setText(""); 
+        txtnmbrg.setText(""); 
         txthb.setText("");
         txthj.setText("");
         txtcarik.setText("");
@@ -59,7 +59,7 @@ private DefaultTableModel tabmode;
       
                 }); 
             }
-            tabelbarang.setModel(tabmode); 
+            tblbarang.setModel(tabmode); 
         } catch (Exception e) { 
             JOptionPane.showMessageDialog(null, "data gagal dipanggil"+e);
         }
@@ -75,7 +75,7 @@ private DefaultTableModel tabmode;
 
         txtkd = new javax.swing.JTextField();
         bhapusk = new javax.swing.JButton();
-        txtnm = new javax.swing.JTextField();
+        txtnmbrg = new javax.swing.JTextField();
         bbatalk = new javax.swing.JButton();
         bkeluark = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
@@ -84,7 +84,7 @@ private DefaultTableModel tabmode;
         jPanel2 = new javax.swing.JPanel();
         txtcarik = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
-        tabelbarang = new javax.swing.JTable();
+        tblbarang = new javax.swing.JTable();
         bcarik = new javax.swing.JButton();
         txthb = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -98,39 +98,62 @@ private DefaultTableModel tabmode;
         cbjenis = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(502, 587));
+        setPreferredSize(new java.awt.Dimension(502, 587));
+        setSize(new java.awt.Dimension(502, 587));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtkd.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtkd, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, 210, 30));
+
+        bhapusk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bhapusk.setText("Hapus");
         bhapusk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bhapuskActionPerformed(evt);
             }
         });
+        getContentPane().add(bhapusk, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 80, -1));
 
+        txtnmbrg.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtnmbrg, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 110, 210, 30));
+
+        bbatalk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bbatalk.setText("Batal");
         bbatalk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bbatalkActionPerformed(evt);
             }
         });
+        getContentPane().add(bbatalk, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 80, -1));
 
+        bkeluark.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bkeluark.setText("Keluar");
         bkeluark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkeluarkActionPerformed(evt);
             }
         });
+        getContentPane().add(bkeluark, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 280, 80, -1));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
         jLabel9.setText("Data Barang");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
 
+        txthj.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txthj.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txthjActionPerformed(evt);
             }
         });
+        getContentPane().add(txthj, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 230, 210, 30));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtcarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtcarikActionPerformed(evt);
@@ -141,8 +164,10 @@ private DefaultTableModel tabmode;
                 txtcarikKeyPressed(evt);
             }
         });
+        jPanel2.add(txtcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 108, -1));
 
-        tabelbarang.setModel(new javax.swing.table.DefaultTableModel(
+        tblbarang.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        tblbarang.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -153,174 +178,80 @@ private DefaultTableModel tabmode;
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        tabelbarang.addMouseListener(new java.awt.event.MouseAdapter() {
+        tblbarang.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tabelbarangMouseClicked(evt);
+                tblbarangMouseClicked(evt);
             }
         });
-        jScrollPane3.setViewportView(tabelbarang);
+        jScrollPane3.setViewportView(tblbarang);
 
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 41, 450, 150));
+
+        bcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bcarik.setText("Cari");
         bcarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bcarikActionPerformed(evt);
             }
         });
+        jPanel2.add(bcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(txtcarik, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bcarik)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtcarik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bcarik))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 470, 205));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Data Barang");
+        txthb.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txthb, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 210, 30));
 
+        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("DATA BARANG");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, 11, 510, 50));
+
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel2.setText("Kode Barang");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, -1, 30));
 
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel3.setText("Nama Barang");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, 30));
 
+        jLabel4.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel4.setText("Jenis Barang");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, 30));
 
+        jLabel5.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel5.setText("Harga Jual");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, 30));
 
+        jLabel6.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel6.setText("Harga Beli");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, 30));
 
+        bsimpank.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bsimpank.setText("Simpan");
         bsimpank.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bsimpankActionPerformed(evt);
             }
         });
+        getContentPane().add(bsimpank, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 80, -1));
 
+        bubahk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bubahk.setText("Ubah");
         bubahk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bubahkActionPerformed(evt);
             }
         });
+        getContentPane().add(bubahk, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 280, 80, -1));
 
+        cbjenis.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         cbjenis.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Minuman", "Makanan" }));
+        getContentPane().add(cbjenis, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 110, 30));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(bsimpank)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bubahk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bhapusk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bbatalk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bkeluark))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5))
-                                .addGap(23, 23, 23)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txthb)
-                                    .addComponent(txtnm)
-                                    .addComponent(txthj)
-                                    .addComponent(txtkd, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                                    .addComponent(cbjenis, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(119, 119, 119)
-                                .addComponent(jLabel1)))
-                        .addGap(80, 80, 80))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtkd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtnm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(cbjenis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(txthb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txthj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bsimpank)
-                    .addComponent(bubahk)
-                    .addComponent(bhapusk)
-                    .addComponent(bbatalk)
-                    .addComponent(bkeluark))
-                .addGap(26, 26, 26)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        pack();
+        setSize(new java.awt.Dimension(518, 612));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void bhapuskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bhapuskActionPerformed
@@ -354,8 +285,8 @@ private DefaultTableModel tabmode;
         // TODO add your handling code here:
     }//GEN-LAST:event_txthjActionPerformed
 
-    private void tabelbarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabelbarangMouseClicked
-        int bar = tabelbarang.getSelectedRow();
+    private void tblbarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblbarangMouseClicked
+        int bar = tblbarang.getSelectedRow();
         String a = tabmode.getValueAt(bar, 0).toString();
         String b = tabmode.getValueAt(bar, 1).toString();
         String c = tabmode.getValueAt(bar, 2).toString();
@@ -363,19 +294,19 @@ private DefaultTableModel tabmode;
         String e = tabmode.getValueAt(bar, 4).toString();
  
         txtkd.setText(a);
-        txtnm.setText(b);
+        txtnmbrg.setText(b);
         cbjenis.setSelectedItem(null);
         txthb.setText(d);
         txthj.setText(e);
 
-    }//GEN-LAST:event_tabelbarangMouseClicked
+    }//GEN-LAST:event_tblbarangMouseClicked
 
     private void bsimpankActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsimpankActionPerformed
         String sql = "insert into barang values (?,?,?,?,?)";
         try{
             PreparedStatement stat = conn.prepareStatement(sql);
             stat.setString(1, txtkd.getText()); 
-            stat.setString(2, txtnm.getText()); 
+            stat.setString(2, txtnmbrg.getText()); 
             stat.setString(3, cbjenis.getSelectedItem().toString()); 
             stat.setString(4, txthb.getText()); 
             stat.setString(5, txthj.getText()); 
@@ -395,7 +326,7 @@ private DefaultTableModel tabmode;
         try{
             String sql = "update barang set nmbrg=?,jenis=?,hargabeli=?,hargajual=? where kdbrg='"+txtkd.getText()+"'";
             PreparedStatement stat = conn.prepareStatement(sql);
-            stat.setString(1, txtnm.getText());
+            stat.setString(1, txtnmbrg.getText());
             stat.setString(2, cbjenis.getSelectedItem().toString());
             stat.setString(3, txthb.getText());
             stat.setString(4, txthj.getText());
@@ -480,11 +411,11 @@ private DefaultTableModel tabmode;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable tabelbarang;
+    private javax.swing.JTable tblbarang;
     private javax.swing.JTextField txtcarik;
     private javax.swing.JTextField txthb;
     private javax.swing.JTextField txthj;
     private javax.swing.JTextField txtkd;
-    private javax.swing.JTextField txtnm;
+    private javax.swing.JTextField txtnmbrg;
     // End of variables declaration//GEN-END:variables
 }

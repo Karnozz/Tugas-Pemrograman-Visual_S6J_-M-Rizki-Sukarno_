@@ -83,10 +83,6 @@ private DefaultTableModel tabmode;
         jScrollPane1 = new javax.swing.JScrollPane();
         txtalamat = new javax.swing.JTextArea();
         rlaki = new javax.swing.JRadioButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        tblplgn = new javax.swing.JTable();
-        bcari = new javax.swing.JButton();
-        txtcari = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -96,39 +92,117 @@ private DefaultTableModel tabmode;
         bsimpan = new javax.swing.JButton();
         bubah = new javax.swing.JButton();
         bhapus = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        tblplgn = new javax.swing.JTable();
         bbatal = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        bcari = new javax.swing.JButton();
+        txtcari = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        bkeluar.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bkeluar.setText("Keluar");
         bkeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkeluarActionPerformed(evt);
             }
         });
+        getContentPane().add(bkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, 80, -1));
 
+        txtid.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtidActionPerformed(evt);
             }
         });
+        getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 218, 30));
 
-        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
         jLabel7.setText("Data Pelanggan");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, -1));
 
+        txtnm.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtnm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 218, 30));
+
+        rperempuan.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         rperempuan.setText("Perempuan");
         rperempuan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rperempuanActionPerformed(evt);
             }
         });
+        getContentPane().add(rperempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
+
+        txttelp.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txttelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 218, 30));
 
         txtalamat.setColumns(20);
+        txtalamat.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtalamat.setRows(5);
         jScrollPane1.setViewportView(txtalamat);
 
-        rlaki.setText("Laki-Laki");
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 218, 110));
 
+        rlaki.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        rlaki.setText("Laki-Laki");
+        getContentPane().add(rlaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("DATA PELANGGAN");
+        jLabel6.setToolTipText("");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 500, -1));
+
+        jLabel1.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        jLabel1.setText("ID Pelanggan");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, 30));
+
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        jLabel2.setText("Nama Pelanggan");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, 30));
+
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        jLabel3.setText("Jenis Kelamin");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, 30));
+
+        jLabel4.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        jLabel4.setText("No. Telepon");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, -1, 30));
+
+        jLabel5.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        jLabel5.setText("Alamat");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, 30));
+
+        bsimpan.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bsimpan.setText("Simpan");
+        bsimpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bsimpanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bsimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 80, -1));
+
+        bubah.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bubah.setText("Ubah");
+        bubah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bubahActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 80, -1));
+
+        bhapus.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bhapus.setText("Hapus");
+        bhapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bhapusActionPerformed(evt);
+            }
+        });
+        getContentPane().add(bhapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 80, -1));
+
+        tblplgn.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         tblplgn.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -151,170 +225,43 @@ private DefaultTableModel tabmode;
         });
         jScrollPane2.setViewportView(tblplgn);
 
-        bcari.setText("Cari");
-        bcari.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bcariActionPerformed(evt);
-            }
-        });
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 440, 150));
 
-        txtcari.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                txtcariKeyPressed(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Data Pelanggan");
-        jLabel6.setToolTipText("");
-
-        jLabel1.setText("ID Pelanggan");
-
-        jLabel2.setText("Nama Pelanggan");
-
-        jLabel3.setText("Jenis Kelamin");
-
-        jLabel4.setText("No. Telepon");
-
-        jLabel5.setText("Alamat");
-
-        bsimpan.setText("Simpan");
-        bsimpan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bsimpanActionPerformed(evt);
-            }
-        });
-
-        bubah.setText("Ubah");
-        bubah.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bubahActionPerformed(evt);
-            }
-        });
-
-        bhapus.setText("Hapus");
-        bhapus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bhapusActionPerformed(evt);
-            }
-        });
-
+        bbatal.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bbatal.setText("Batal");
         bbatal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bbatalActionPerformed(evt);
             }
         });
+        getContentPane().add(bbatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, 80, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(89, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(146, 146, 146))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(bsimpan)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bubah)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bhapus)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(bbatal)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bkeluar)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel2)
-                                                .addComponent(jLabel3)
-                                                .addComponent(jLabel4))
-                                            .addGap(41, 41, 41))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel5)
-                                            .addGap(88, 88, 88))))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtid, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addComponent(rlaki)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(rperempuan)
-                                            .addGap(58, 58, 58))
-                                        .addComponent(txttelp, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtnm, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(66, 66, 66))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bcari))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 22, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(txtid, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtnm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(rperempuan)
-                    .addComponent(rlaki))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(txttelp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bsimpan)
-                    .addComponent(bubah)
-                    .addComponent(bhapus)
-                    .addComponent(bbatal)
-                    .addComponent(bkeluar))
-                .addGap(24, 24, 24)
-                .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtcari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bcari))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        bcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bcari.setText("Cari");
+        bcari.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bcariActionPerformed(evt);
+            }
+        });
+        jPanel1.add(bcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+
+        txtcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        txtcari.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcariKeyPressed(evt);
+            }
+        });
+        jPanel1.add(txtcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 109, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 460, 200));
 
         bindingGroup.bind();
 
-        pack();
+        setSize(new java.awt.Dimension(518, 681));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void bkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkeluarActionPerformed
@@ -491,6 +438,7 @@ private DefaultTableModel tabmode;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JRadioButton rlaki;

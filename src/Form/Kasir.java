@@ -107,89 +107,143 @@ private DefaultTableModel tabmode;
         bcarik = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setText("Data Kasir");
+        jLabel1.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel1.setText("DATA KASIR");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, 50));
 
+        jLabel2.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel2.setText("ID Kasir");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, 30));
 
+        jLabel3.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel3.setText("Nama Kasir");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 30));
 
+        jLabel4.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel4.setText("Jenis Kelamin");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, 30));
 
+        jLabel5.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel5.setText("Agama");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, 30));
 
+        jLabel6.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel6.setText("No Telepon");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 30));
 
+        jLabel7.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel7.setText("Alamat");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 30));
 
+        jLabel8.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel8.setText("Password");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, -1, 30));
 
+        txtidk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtidk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 228, 30));
+
+        txtnmk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtnmk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 228, 30));
+
+        rlakik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         rlakik.setText("Laki-Laki");
         rlakik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rlakikActionPerformed(evt);
             }
         });
+        getContentPane().add(rlakik, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, 30));
 
+        rperempuank.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         rperempuank.setText("Perempuan");
+        getContentPane().add(rperempuank, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, 30));
 
+        txtagama.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtagama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtagamaActionPerformed(evt);
             }
         });
+        getContentPane().add(txtagama, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 228, 30));
+
+        txttelpk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txttelpk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 228, 30));
 
         txtalmk.setColumns(20);
+        txtalmk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtalmk.setRows(5);
         jScrollPane1.setViewportView(txtalmk);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 228, 90));
+
+        txtpw.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        getContentPane().add(txtpw, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 228, 30));
+
+        bsimpank.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bsimpank.setText("Simpan");
         bsimpank.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bsimpankActionPerformed(evt);
             }
         });
+        getContentPane().add(bsimpank, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
 
+        bubahk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bubahk.setText("Ubah");
         bubahk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bubahkActionPerformed(evt);
             }
         });
+        getContentPane().add(bubahk, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 410, 70, -1));
 
+        bhapusk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bhapusk.setText("Hapus");
         bhapusk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bhapuskActionPerformed(evt);
             }
         });
+        getContentPane().add(bhapusk, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, -1));
 
+        bbatalk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bbatalk.setText("Batal");
         bbatalk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bbatalkActionPerformed(evt);
             }
         });
+        getContentPane().add(bbatalk, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, 70, -1));
 
+        bkeluark.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bkeluark.setText("Keluar");
         bkeluark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bkeluarkActionPerformed(evt);
             }
         });
+        getContentPane().add(bkeluark, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 410, 70, -1));
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
         jLabel9.setText("Data Kasir");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, -1, -1));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        txtcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtcarik.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtcarikKeyPressed(evt);
             }
         });
+        jPanel2.add(txtcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 13, 108, -1));
 
+        tblplgnk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         tblplgnk.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -208,154 +262,23 @@ private DefaultTableModel tabmode;
         });
         jScrollPane3.setViewportView(tblplgnk);
 
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 45, 450, 140));
+
+        bcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bcarik.setText("Cari");
         bcarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bcarikActionPerformed(evt);
             }
         });
+        jPanel2.add(bcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 12, -1, -1));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(txtcarik, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(bcarik)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtcarik, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(bcarik))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 200));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 9, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel9))
-                        .addGap(18, 18, 18))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(bsimpank)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bubahk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bhapusk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bbatalk)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(bkeluark))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel2)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel8))
-                                .addGap(23, 23, 23)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txttelpk)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(rlakik)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(rperempuank))
-                                    .addComponent(txtidk)
-                                    .addComponent(txtnmk)
-                                    .addComponent(txtagama)
-                                    .addComponent(jScrollPane1)
-                                    .addComponent(txtpw, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(119, 119, 119)
-                                .addComponent(jLabel1)))
-                        .addGap(80, 80, 80))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtidk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtnmk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(rlakik)
-                    .addComponent(rperempuank))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(txttelpk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtagama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(txtpw, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bsimpank)
-                    .addComponent(bubahk)
-                    .addComponent(bhapusk)
-                    .addComponent(bbatalk)
-                    .addComponent(bkeluark))
-                .addGap(26, 26, 26)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        pack();
+        setSize(new java.awt.Dimension(518, 736));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void rlakikActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rlakikActionPerformed
