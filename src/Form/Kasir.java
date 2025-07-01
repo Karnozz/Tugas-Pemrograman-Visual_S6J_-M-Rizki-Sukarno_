@@ -109,45 +109,34 @@ private DefaultTableModel tabmode;
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("DATA KASIR");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 10, -1, 50));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 500, 50));
 
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel2.setText("ID Kasir");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, 30));
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel3.setText("Nama Kasir");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, 30));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel4.setText("Jenis Kelamin");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel5.setText("Agama");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, 30));
 
-        jLabel6.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel6.setText("No Telepon");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, 30));
 
-        jLabel7.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel7.setText("Alamat");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 260, -1, 30));
 
-        jLabel8.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel8.setText("Password");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, -1, 30));
-
-        txtidk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txtidk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 60, 228, 30));
-
-        txtnmk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txtnmk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 100, 228, 30));
 
-        rlakik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         rlakik.setText("Laki-Laki");
         rlakik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,32 +145,26 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(rlakik, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, 30));
 
-        rperempuank.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         rperempuank.setText("Perempuan");
         getContentPane().add(rperempuank, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, 30));
 
-        txtagama.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtagama.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtagamaActionPerformed(evt);
             }
         });
         getContentPane().add(txtagama, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 228, 30));
-
-        txttelpk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txttelpk, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 228, 30));
 
         txtalmk.setColumns(20);
-        txtalmk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        txtalmk.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         txtalmk.setRows(5);
         jScrollPane1.setViewportView(txtalmk);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 260, 228, 90));
-
-        txtpw.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txtpw, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 228, 30));
 
-        bsimpank.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bsimpank.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bsimpank.setText("Simpan");
         bsimpank.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,7 +173,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bsimpank, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 410, -1, -1));
 
-        bubahk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bubahk.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bubahk.setText("Ubah");
         bubahk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,7 +182,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bubahk, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 410, 70, -1));
 
-        bhapusk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bhapusk.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bhapusk.setText("Hapus");
         bhapusk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,7 +191,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bhapusk, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 70, -1));
 
-        bbatalk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bbatalk.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bbatalk.setText("Batal");
         bbatalk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -217,7 +200,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bbatalk, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 410, 70, -1));
 
-        bkeluark.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bkeluark.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bkeluark.setText("Keluar");
         bkeluark.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -235,15 +218,13 @@ private DefaultTableModel tabmode;
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtcarik.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtcarikKeyPressed(evt);
             }
         });
-        jPanel2.add(txtcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 13, 108, -1));
+        jPanel2.add(txtcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 13, 108, 20));
 
-        tblplgnk.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         tblplgnk.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -264,14 +245,13 @@ private DefaultTableModel tabmode;
 
         jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 45, 450, 140));
 
-        bcarik.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bcarik.setText("Cari");
         bcarik.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bcarikActionPerformed(evt);
             }
         });
-        jPanel2.add(bcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 12, -1, -1));
+        jPanel2.add(bcarik, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 12, -1, 20));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 470, 200));
 

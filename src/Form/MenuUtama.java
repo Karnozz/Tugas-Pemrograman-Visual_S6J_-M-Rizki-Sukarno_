@@ -4,12 +4,21 @@
  * and open the template in the editor.
  */
 package Form;
+
+import java.util.HashMap;
+import javax.swing.JOptionPane;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
+import Koneksi.koneksi;
+import java.sql.Connection;
+
 /**
  *
  * @author karno
  */
 public class MenuUtama extends javax.swing.JFrame {
-
+private Connection conn = new koneksi().connect();
     /**
      * Creates new form MenuUtama
      */
@@ -40,6 +49,10 @@ public class MenuUtama extends javax.swing.JFrame {
         mksr = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         mnota = new javax.swing.JMenuItem();
+        jMenu5 = new javax.swing.JMenu();
+        lappel = new javax.swing.JMenuItem();
+        lapbar = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -57,12 +70,12 @@ public class MenuUtama extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(1080, 720));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Pemrograman Visual");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 1080, 50));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 1080, 50));
 
-        jLabel2.setFont(new java.awt.Font("Poppins ExtraBold", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Sistem Aplikasi Penjualan");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 1080, 50));
@@ -70,9 +83,9 @@ public class MenuUtama extends javax.swing.JFrame {
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 1080, 720));
 
         jMenu3.setText("Master");
-        jMenu3.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jMenu3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        mplgn.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        mplgn.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         mplgn.setText("Pelanggan");
         mplgn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,7 +94,7 @@ public class MenuUtama extends javax.swing.JFrame {
         });
         jMenu3.add(mplgn);
 
-        mbrg.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        mbrg.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         mbrg.setText("Barang");
         mbrg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +103,7 @@ public class MenuUtama extends javax.swing.JFrame {
         });
         jMenu3.add(mbrg);
 
-        mksr.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        mksr.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         mksr.setText("Kasir");
         mksr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,9 +115,9 @@ public class MenuUtama extends javax.swing.JFrame {
         jMenuBar2.add(jMenu3);
 
         jMenu4.setText("Transaksi");
-        jMenu4.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        jMenu4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        mnota.setFont(new java.awt.Font("Poppins", 0, 12)); // NOI18N
+        mnota.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         mnota.setText("Nota");
         mnota.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +127,34 @@ public class MenuUtama extends javax.swing.JFrame {
         jMenu4.add(mnota);
 
         jMenuBar2.add(jMenu4);
+
+        jMenu5.setText("Laporan");
+
+        lappel.setText("Laporan Pelanggan");
+        lappel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lappelActionPerformed(evt);
+            }
+        });
+        jMenu5.add(lappel);
+
+        lapbar.setText("Laporan Barang");
+        lapbar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lapbarActionPerformed(evt);
+            }
+        });
+        jMenu5.add(lapbar);
+
+        jMenuItem2.setText("Laporan Nota");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem2);
+
+        jMenuBar2.add(jMenu5);
 
         setJMenuBar(jMenuBar2);
 
@@ -143,6 +184,42 @@ public class MenuUtama extends javax.swing.JFrame {
         Nota frmN = new Nota();
         frmN.setVisible(true);
     }//GEN-LAST:event_mnotaActionPerformed
+
+    private void lappelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lappelActionPerformed
+try {
+            String path="./src/Form/report1.jasper";
+            HashMap parameter1 = new HashMap();
+            
+            JasperPrint print = JasperFillManager.fillReport(path, parameter1,conn);
+            JasperViewer.viewReport(print, false);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(rootPane, "Dokumen Tidak Ada "+ex);
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_lappelActionPerformed
+
+    private void lapbarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lapbarActionPerformed
+       try {
+            String path="./src/Form/Barang.jasper";
+            HashMap parameter1 = new HashMap();
+            
+            JasperPrint print = JasperFillManager.fillReport(path, parameter1,conn);
+            JasperViewer.viewReport(print, false);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(rootPane, "Dokumen Tidak Ada "+ex);
+}        // TODO add your handling code here:
+    }//GEN-LAST:event_lapbarActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+         try {
+            String path="./src/Form/Nota.jasper";
+            HashMap parameter1 = new HashMap();
+            
+            JasperPrint print = JasperFillManager.fillReport(path, parameter1,conn);
+            JasperViewer.viewReport(print, false);
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(rootPane, "Dokumen Tidak Ada "+ex);
+}        
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -186,10 +263,14 @@ public class MenuUtama extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem lapbar;
+    private javax.swing.JMenuItem lappel;
     private javax.swing.JMenuItem mbrg;
     private javax.swing.JMenuItem mksr;
     private javax.swing.JMenuItem mnota;

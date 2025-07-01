@@ -43,35 +43,33 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Poppins SemiBold", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("LOGIN");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 400, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 400, -1));
 
-        jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel2.setText("Username");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, 30));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 120, 60, 20));
 
-        jLabel3.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
         jLabel3.setText("Password");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 70, 30));
-        jPanel1.add(txtuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 190, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 60, 20));
+        jPanel1.add(txtuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 130, -1));
 
-        blogin.setFont(new java.awt.Font("Poppins Medium", 0, 14)); // NOI18N
+        blogin.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         blogin.setText("Login");
         blogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bloginActionPerformed(evt);
             }
         });
-        jPanel1.add(blogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 80, -1));
+        jPanel1.add(blogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 80, -1));
 
         txtpass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtpassActionPerformed(evt);
             }
         });
-        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 190, 30));
+        jPanel1.add(txtpass, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 170, 130, 20));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 

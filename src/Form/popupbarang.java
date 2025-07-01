@@ -69,7 +69,6 @@ private Connection conn = new koneksi().connect();
         setMinimumSize(new java.awt.Dimension(570, 350));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txtcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtcari.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtcariKeyPressed(evt);
@@ -77,11 +76,9 @@ private Connection conn = new koneksi().connect();
         });
         getContentPane().add(txtcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 110, 20));
 
-        bcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bcari.setText("Cari");
         getContentPane().add(bcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 20, 60, 20));
 
-        tblbarang.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         tblbarang.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

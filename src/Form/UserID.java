@@ -5,8 +5,6 @@
  */
 package Form;
 
-import User.*;
-
 /**
  *
  * @author karno

@@ -62,7 +62,6 @@ private DefaultTableModel tabmode;
             JOptionPane.showMessageDialog(null, "data gagal dipanggil"+e);
         }
     }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -71,18 +70,15 @@ private DefaultTableModel tabmode;
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         bkeluar = new javax.swing.JButton();
         txtid = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         txtnm = new javax.swing.JTextField();
-        rperempuan = new javax.swing.JRadioButton();
         txttelp = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtalamat = new javax.swing.JTextArea();
-        rlaki = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -98,11 +94,14 @@ private DefaultTableModel tabmode;
         jPanel1 = new javax.swing.JPanel();
         bcari = new javax.swing.JButton();
         txtcari = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        rlaki = new javax.swing.JRadioButton();
+        rperempuan = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bkeluar.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bkeluar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bkeluar.setText("Keluar");
         bkeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +110,6 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bkeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 360, 80, -1));
 
-        txtid.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtidActionPerformed(evt);
@@ -119,63 +117,41 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 218, 30));
 
-        jLabel7.setFont(new java.awt.Font("Poppins", 1, 11)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel7.setText("Data Pelanggan");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, -1, -1));
-
-        txtnm.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txtnm, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 218, 30));
-
-        rperempuan.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
-        rperempuan.setText("Perempuan");
-        rperempuan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rperempuanActionPerformed(evt);
-            }
-        });
-        getContentPane().add(rperempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
-
-        txttelp.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         getContentPane().add(txttelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, 218, 30));
 
         txtalamat.setColumns(20);
-        txtalamat.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        txtalamat.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
         txtalamat.setRows(5);
         jScrollPane1.setViewportView(txtalamat);
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 218, 110));
 
-        rlaki.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
-        rlaki.setText("Laki-Laki");
-        getContentPane().add(rlaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
-
-        jLabel6.setFont(new java.awt.Font("Poppins", 1, 24)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("DATA PELANGGAN");
         jLabel6.setToolTipText("");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 500, -1));
 
-        jLabel1.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel1.setText("ID Pelanggan");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 70, -1, 30));
 
-        jLabel2.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel2.setText("Nama Pelanggan");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, -1, 30));
 
-        jLabel3.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel3.setText("Jenis Kelamin");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, -1, 30));
 
-        jLabel4.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel4.setText("No. Telepon");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, -1, 30));
 
-        jLabel5.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         jLabel5.setText("Alamat");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 230, -1, 30));
 
-        bsimpan.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bsimpan.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bsimpan.setText("Simpan");
         bsimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +160,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bsimpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 80, -1));
 
-        bubah.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bubah.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bubah.setText("Ubah");
         bubah.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,7 +169,7 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bubah, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 80, -1));
 
-        bhapus.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bhapus.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bhapus.setText("Hapus");
         bhapus.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,7 +178,6 @@ private DefaultTableModel tabmode;
         });
         getContentPane().add(bhapus, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 80, -1));
 
-        tblplgn.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         tblplgn.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -214,10 +189,6 @@ private DefaultTableModel tabmode;
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, tblplgn, org.jdesktop.beansbinding.ObjectProperty.create(), tblplgn, org.jdesktop.beansbinding.BeanProperty.create("elements"));
-        bindingGroup.addBinding(binding);
-        binding.bind();
         tblplgn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tblplgnMouseClicked(evt);
@@ -227,7 +198,7 @@ private DefaultTableModel tabmode;
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 440, 150));
 
-        bbatal.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
+        bbatal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         bbatal.setText("Batal");
         bbatal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,16 +210,14 @@ private DefaultTableModel tabmode;
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        bcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         bcari.setText("Cari");
         bcari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 bcariActionPerformed(evt);
             }
         });
-        jPanel1.add(bcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
+        jPanel1.add(bcari, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, 20));
 
-        txtcari.setFont(new java.awt.Font("Poppins", 0, 11)); // NOI18N
         txtcari.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtcariKeyPressed(evt);
@@ -258,10 +227,22 @@ private DefaultTableModel tabmode;
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 460, 200));
 
-        bindingGroup.bind();
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        setSize(new java.awt.Dimension(518, 681));
-        setLocationRelativeTo(null);
+        rlaki.setText("Laki-Laki");
+        jPanel2.add(rlaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+
+        rperempuan.setText("Perempuan");
+        rperempuan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rperempuanActionPerformed(evt);
+            }
+        });
+        jPanel2.add(rperempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 0, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 220, 30));
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void bkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bkeluarActionPerformed
@@ -271,10 +252,6 @@ private DefaultTableModel tabmode;
     private void txtidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtidActionPerformed
-
-    private void rperempuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rperempuanActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rperempuanActionPerformed
 
     private void bsimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsimpanActionPerformed
 
@@ -349,7 +326,26 @@ private DefaultTableModel tabmode;
         }
     }//GEN-LAST:event_bhapusActionPerformed
 
-    
+    private void tblplgnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblplgnMouseClicked
+        int bar = tblplgn.getSelectedRow();
+        String a = tabmode.getValueAt(bar, 0).toString();
+        String b = tabmode.getValueAt(bar, 1).toString();
+        String c = tabmode.getValueAt(bar, 2).toString();
+        String d = tabmode.getValueAt(bar, 3).toString();
+        String e = tabmode.getValueAt(bar, 4).toString();
+
+        txtid.setText(a);
+        txtnm.setText(b);
+
+        if ("Laki-Laki".equals(c)) {
+            rlaki.setSelected(true);
+        } else{
+            rperempuan.setSelected(true);
+        }
+        txttelp.setText(d);
+        txtalamat.setText(e);
+    }//GEN-LAST:event_tblplgnMouseClicked
+
     private void bbatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bbatalActionPerformed
         kosong();
         datatable();
@@ -359,35 +355,16 @@ private DefaultTableModel tabmode;
         datatable();
     }//GEN-LAST:event_bcariActionPerformed
 
-    private void tblplgnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblplgnMouseClicked
-        int bar = tblplgn.getSelectedRow(); 
-        String a = tabmode.getValueAt(bar, 0).toString(); 
-        String b = tabmode.getValueAt(bar, 1).toString(); 
-        String c = tabmode.getValueAt(bar, 2).toString(); 
-        String d = tabmode.getValueAt(bar, 3).toString(); 
-        String e = tabmode.getValueAt(bar, 4).toString(); 
-        
-        txtid.setText(a); 
-        txtnm.setText(b); 
-        
-        if ("Laki-Laki".equals(c)) { 
-            rlaki.setSelected(true); 
-            } else{ 
-            rperempuan.setSelected(true); 
-            } 
-        txttelp.setText(d); 
-        txtalamat.setText(e); 
-
-    }//GEN-LAST:event_tblplgnMouseClicked
-
     private void txtcariKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcariKeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) { 
-            datatable(); 
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            datatable();
         }
     }//GEN-LAST:event_txtcariKeyPressed
 
-       
-    
+    private void rperempuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rperempuanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rperempuanActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -439,6 +416,7 @@ private DefaultTableModel tabmode;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JRadioButton rlaki;
@@ -449,6 +427,5 @@ private DefaultTableModel tabmode;
     private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtnm;
     private javax.swing.JTextField txttelp;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
